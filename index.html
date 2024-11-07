@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Toggle Switch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-dark">
+            <h1 class="text-white">You'll marry for</h1>
+          </nav>
+    </header>
+    <main>
+        <div>
+            <section class="one"></section>
+            <section class="two"></section>
+            <section class="three"></section>
+        </div>
+        <div>
+            <label class="switch">
+                <input type="checkbox" checked onclick="toggleCheckbox(this)">
+                <span class="slider">
+                    <span class="dot"></span>
+                </span>
+                <h5>Beautiful wife</h5>
+            </label>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleCheckbox(this)">
+                <span class="slider">
+                    <span class="dot"></span>
+                </span>
+                <h5>Dahej</h5>
+            </label>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleCheckbox(this)">
+                <span class="slider">
+                    <span class="dot"></span>
+                </span>
+                <h5>Seal pack wife</h5>
+            </label>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: rgb(44, 44, 44);
+    color: white;
+}
+header {
+    height: 10vh;
+}
+.navbar {
+    justify-content: center;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    width: 100vw;
+}
+main div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    width: 50%;
+    height: 100%;
+}
+main div section {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}
+main div section:nth-child(1) {
+    background: url(beautiful.avif) no-repeat center;
+    background-size: contain;
+    /* display: none; */
+}
+main div section:nth-child(2) {
+    background: url(money.jpeg) no-repeat center;
+    background-size: contain;
+    display: none;
+}
+main div section:nth-child(3) {
+    background: url(ugly.webp) no-repeat center;
+    background-size: contain;
+    display: none;
+}
+.switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    border-radius: 10px;
+    height: 60px;
+    width: 250px;
+    gap: 5px;
+    border: 2px solid white;
+    margin-top: 23px;
+    cursor: pointer;
+    user-select: none;
+}
+.switch input {
+    position: absolute;
+    opacity: 0;
+}
+.slider {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    padding: 0 1.5px;
+    background: rgb(177, 166, 166);
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 50%;
+    transition: left 0.5s;
+}
+.switch input:checked + .slider .dot {
+    left: 28px;
+}
+.switch input:checked + .slider {
+    background: #4CAF50;
+}
