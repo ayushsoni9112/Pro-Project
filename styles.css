@@ -37,18 +37,24 @@ main div section {
     height: 90%;
     width: 100%;
 }
+h2 {
+    font-size: 150%;
+    position: fixed;
+    bottom: 5%;
+    right: 4%;
+}
 main div section:nth-child(1) {
-    background: url(beautiful.avif) no-repeat center;
+    background: url(movieDate.jpg) no-repeat center;
     background-size: contain;
     /* display: none; */
 }
 main div section:nth-child(2) {
-    background: url(money.jpeg) no-repeat center;
+    background: url(kiss.webp) no-repeat center;
     background-size: contain;
     display: none;
 }
 main div section:nth-child(3) {
-    background: url(ugly.webp) no-repeat center;
+    background: url(purpose.jpg) no-repeat center;
     background-size: contain;
     display: none;
 }
@@ -59,7 +65,7 @@ main div section:nth-child(3) {
     padding: 13px;
     border-radius: 10px;
     height: 60px;
-    width: 250px;
+    width: 270px;
     gap: 5px;
     border: 2px solid white;
     margin-top: 23px;
