@@ -5,8 +5,8 @@
 }
 body {
     height: 100vh;
-    max-width: 100vw;
-    padding-right: 3rem;
+    /* max-width: 100vw; */
+    /* padding-right: 3rem; */
     background: rgb(44, 44, 44);
     color: white;
 }
