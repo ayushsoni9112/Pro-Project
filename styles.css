@@ -5,6 +5,8 @@
 }
 body {
     height: 100vh;
+    max-width: 100vw;
+    padding-right: 3rem;
     background: rgb(44, 44, 44);
     color: white;
 }
@@ -44,17 +46,17 @@ h2 {
     right: 4%;
 }
 main div section:nth-child(1) {
-    background: url(movieDate.jpg) no-repeat center;
+    background: url(movieDate.jpg) no-repeat left;
     background-size: contain;
     /* display: none; */
 }
 main div section:nth-child(2) {
-    background: url(kiss.webp) no-repeat center;
+    background: url(kiss.webp) no-repeat left;
     background-size: contain;
     display: none;
 }
 main div section:nth-child(3) {
-    background: url(purpose.jpg) no-repeat center;
+    background: url(purpose.jpg) no-repeat left;
     background-size: contain;
     display: none;
 }
